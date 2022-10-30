@@ -20,7 +20,6 @@ export default function Form(props: Props) {
                 id: new Date(),
                 name: inputValue,
                 status: "Active",
-                selected: false
             }
             setTodosList([...todosList, newTodo]);
             setInputValue('');
@@ -32,7 +31,9 @@ export default function Form(props: Props) {
                 <button className='btn' type='submit'>
                     <ICONS name='angle-down' color='lightgray' />
                 </button>
-                <input type="text" placeholder='What need to be done?' value={inputValue} onChange={(e) => setInputValue((e.target as HTMLInputElement).value)} />
+                <input type="text" placeholder='What need to be done?' 
+                    data-testid="text-input"
+                value={inputValue} onChange={(e) => setInputValue((e.target as HTMLInputElement).value)} id="text-input" />
             </form>
         </div>
     );
