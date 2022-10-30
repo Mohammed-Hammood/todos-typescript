@@ -28,6 +28,7 @@ export default function Form(props: Props) {
     return (
         <div className='form_wrapper'>
             <form onSubmit={(e) => handleSubmit(e)}>
+                {/* I don't know if this button is for sorting todos or for submit, but I considered it as for submit */}
                 <button className='btn' type='submit'>
                     <ICONS name='angle-down' color='lightgray' />
                 </button>
