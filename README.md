@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+
+# Todos app:
+-  created by create-react-app
+-  TypeScript,Reactjs, Sass, Styled-component
+
+
+#Projects should looks like this:
+<img src="https://lh6.googleusercontent.com/AsAPphKHBNOLG696uKzrvZTC-thqyoJmviGtmxydKDrL7_VPGLITOFIF_2jOXspuRR79q7ujpyb2e9b9BboR7T8VxnytAkbArAIZhBTVt8rMKdLA2N0OxJyvbd2F4onbw6WbfeHUTnvoR1l9NyhZESVa9amTiqg-IC6KWblOkgDtWbL8R126e9pO" style="width:100%;object-fit:contain" alt=""/>
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -39,11 +47,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-Projects should looks like this:
-<img src="https://lh6.googleusercontent.com/AsAPphKHBNOLG696uKzrvZTC-thqyoJmviGtmxydKDrL7_VPGLITOFIF_2jOXspuRR79q7ujpyb2e9b9BboR7T8VxnytAkbArAIZhBTVt8rMKdLA2N0OxJyvbd2F4onbw6WbfeHUTnvoR1l9NyhZESVa9amTiqg-IC6KWblOkgDtWbL8R126e9pO" style="width:100%;object-fit:contain" alt=""/>
