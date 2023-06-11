@@ -1,0 +1,54 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	background: transparent;
+	font-size: inherit;
+	color: inherit;
+	box-sizing: border-box;
+	text-decoration: none;
+	scrollbar-color:  var(--scrollbarThumbColor)  var(--scrollbarTrackColor);
+	scrollbar-width: small;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbarThumbColor);
+}
+::-webkit-scrollbar-track {
+	background-color: var(--scrollbarTrackColor);
+}
+::selection {
+	color: white;
+	background-color: var(--specialColor);
+}
+img, picture {
+	max-width: 100%;	
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#__app {
+	min-height: 100vmin;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}

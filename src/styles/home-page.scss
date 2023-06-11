@@ -1,0 +1,79 @@
+
+@import './mixins.scss';
+
+main {
+    padding:15px;
+  
+    @include CENTER_H;
+    .main_wrapper {
+        @include CENTER_H;
+        justify-content: flex-start;
+        flex-direction: column;
+        width:100%;
+        max-width: 600px;
+        .icon {
+            width:20px;
+            height:20px;
+        }
+        .btn:hover {
+            transform:scale(1.3);
+            transition:0.1s;
+        }
+        .btn  {
+            border:none;
+            @include CENTER_HV;
+            cursor: pointer;
+            color:var(--colorGray);
+            background: inherit;
+        }
+        .title {
+            width:100%;
+            font-size: 40px;
+            color:#E9DADA;
+            @include CENTER_H;
+        }
+        .todos_wrapper {
+            width:100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            .form_wrapper form {
+                @include CENTER_V;
+                button {
+                    padding:10px;
+                    height:100%;
+                }
+                input[type='text'] {
+                    width:100%;
+                    padding:15px 10px;
+                    border:none;
+                    font-size: 18px;
+                    font-style: italic;
+                    color:lightgray;
+                }
+            }
+            
+            .control-panel {
+                width:100%;
+                @include CENTER_V;
+                justify-content:space-between;
+                padding:10px;
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    gap:10px;
+                    .text {
+                        color:var(--colorGray);
+                    }
+                    .btn {
+                        padding: 5px 10px;
+                    }
+                    .active_btn {
+                        outline: 1px solid #ECD7D7;
+                        border-radius: 5px;
+                    }
+                }
+            }
+         
+        }
+    }
+}
