@@ -1,10 +1,10 @@
 import React from 'react';
-import { Sort, SortTypes } from 'utils/types';
+import { Sort } from 'utils/types';
 
 
 interface Props {
-    setSort: (sort: SortTypes) => void;
-    sort: SortTypes;
+    setSort: (sort: Sort ) => void;
+    sort: Sort;
     activeTodosCount: number;
     deleteCompletedTodos: ()=> void;
 }

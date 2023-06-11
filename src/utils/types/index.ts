@@ -12,9 +12,9 @@ type TodoTypes = {
 }
 
 
-type SortTypes = typeof Sort[keyof typeof Sort];
+// type SortTypes = typeof Sort[keyof typeof Sort];
 
 export type {
     TodoTypes,
-    SortTypes,
+    // SortTypes,
 }

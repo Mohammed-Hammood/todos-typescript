@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Todos, ControlPanel, Form } from 'components';
-import { TodoTypes, SortTypes, Sort } from 'utils/types';
+import { TodoTypes, Sort } from 'utils/types';
 import TodosLocalStorage from 'utils/localstorage';
 import 'styles/home-page.scss';
 
@@ -9,7 +9,8 @@ function HomePage() {
 	const localstorage = new TodosLocalStorage();
 	const [todosList, setTodosList] = useState<TodoTypes[]>(localstorage.get());
 	const [todoName, setTodoName] = useState<string>('');
-	const [sort, setSort] = useState<SortTypes>(Sort.All);
+	const [sort, setSort] = useState<Sort>(Sort.All);
+	
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
 		e.preventDefault();
 		if (todoName.trim().length > 0) {
@@ -33,7 +34,7 @@ function HomePage() {
 	const completedToggle = (todoId: number): void => {
 		const todo = todosList.find((todo) => todo.id === todoId);
 		if (todo) {
-			todo.status = todo.status === Sort.Active? Sort.Completed : Sort.Active;
+			todo.status = todo.status === Sort.Active ? Sort.Completed : Sort.Active;
 			const newTodosList = todosList.map(item => item.id === todoId ? todo : item);
 			setTodosList(newTodosList);
 			localstorage.set(newTodosList);
