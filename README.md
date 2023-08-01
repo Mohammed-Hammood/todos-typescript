@@ -1,7 +1,7 @@
 # Todos app:
 -  created by create-react-app
 -  TypeScript,Reactjs, Sass, Styled-component
-- App is deployed on: https://todos-two-xi.vercel.app
+- App is deployed on: https://todos-1.vercel.app
 
 # Project should looks like this:
 <img src="https://lh6.googleusercontent.com/AsAPphKHBNOLG696uKzrvZTC-thqyoJmviGtmxydKDrL7_VPGLITOFIF_2jOXspuRR79q7ujpyb2e9b9BboR7T8VxnytAkbArAIZhBTVt8rMKdLA2N0OxJyvbd2F4onbw6WbfeHUTnvoR1l9NyhZESVa9amTiqg-IC6KWblOkgDtWbL8R126e9pO" style="width:100%;object-fit:contain" alt=""/>
